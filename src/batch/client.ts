@@ -135,7 +135,7 @@ export class BatchTranscription {
         }
       },
       3000, // repeat every 3 seconds
-      60 * 60 * 1000, // 60 minutes timeout
+      120 * 60 * 1000, // 120 minutes timeout
     );
 
     return await this.getJobResult(submitResponse.id, format);
